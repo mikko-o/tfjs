@@ -100,7 +100,8 @@
     "bazel:lint-fix": "yarn bazel:format --lint=fix",
     "bazel:lint-check": "yarn bazel:format --lint=warn --mode=check",
     "buildifier-ci": "./scripts/buildifier-ci.sh",
-    "start-local-debugger-server": "node ./scripts/start_local_debugger_server.js"
+    "start-local-debugger-server": "node ./scripts/start_local_debugger_server.js",
+    "postinstall": "tsc --outDir ./dist"
   },
   "dependencies": {
     "node-fetch": "^2.6.7"
